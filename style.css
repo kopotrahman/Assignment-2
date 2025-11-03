@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: darkslategray;
+    background-color:rgb(207, 224, 229)
+}
+
+.fortune-box{
+    margin:30px;
+    width:60%;
+    padding:20px;
+    border: 2px solid darkslategray;
+    border-radius: 10px;
+    font-size:18px;
+    background:whitesmoke;
+}
+
+button{
+
+    padding: 8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    margin:0 10px;
+    background-color:rgb(207, 224, 229);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+button:hover{
+    background-color:darkslategray;
+    color:white;
+    transition:all 0.3s ease-out;
+}
+
+footer{
+    margin-top:50px;
+    color:#888;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:12px;
+    background-color:rgb(207, 224, 229);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+#stopwatch{
+    display:flex;
+    flex-direction: column;
+
+}
+
+#title{
+    font-size:48px;
+    font-weight:bold;
+}
+
+#display{
+    display:flex;
+    padding:20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+#taskInput{
+    width: 320px;
+    max-width: 90vw;
+    padding: 10px 12px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 16px 8px;
+}
+
+#taskList{
+    width: 420px;
+    margin-top: 12px;
+    padding:0;
+    list-style: none;
+    background: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#taskList li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+#taskList li span{
+    flex: 1 1 auto;
+    margin-left: 10px;
+    text-align: left;
+}
+
+#taskList li button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    margin: 0 8px;
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 600;
+}
+
+nav a:hover{ 
+    text-decoration: underline; 
+}
