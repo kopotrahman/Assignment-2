@@ -16,41 +16,41 @@ const fortunes = [
 const fortuneBox = document.getElementById('fortuneBox');
 fortuneBox.textContent=fortunes[Math.floor(Math.random() * fortunes.length)];
 
-function changeFontColor() {
-  const colors = ['red', 'blue', 'green', 'purple', 'orange', 'teal', 'brown', 'pink'];
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  fortuneBox.style.color = randomColor;
+function btn1() {
+    fortuneBox.style.borderColor='#2B3209';
+    fortuneBox.style.fontFamily="arial";
+    fortuneBox.style.fontSize="30px";
+    fortuneBox.style.backgroundColor='#6A7438';
+    fortuneBox.style.color = '#f2e3e3ff';
+
 }
 
-function changeBgColor(){
-    const colors= ['lightyellow', 'lightblue', 'lightgreen', 'lavender', 'lightgrey', 'beige', 'lightpink', 'lightcoral'];
-    fortuneBox.style.backgroundColor=colors[Math.floor(Math.random() * colors.length)];
+function btn2(){
+    fortuneBox.style.borderColor='white';
+    fortuneBox.style.fontFamily="times new roman";
+    fortuneBox.style.fontSize="15px";
+    fortuneBox.style.backgroundColor='#44FFFF';
+    fortuneBox.style.color = 'Black';
 }
 
 
 
-function changeBorderColor(){
-    const colors= ['red', 'blue', 'green', 'purple', 'orange', 'teal', 'brown', 'pink'];
-    fortuneBox.style.borderColor=colors[Math.floor(Math.random() * colors.length)];
+function btn3(){
+    fortuneBox.style.borderColor='GreenYellow';
+    fortuneBox.style.fontFamily="Poppins";
+    fortuneBox.style.fontSize="20px";
+    fortuneBox.style.backgroundColor='LightCyan';
+    fortuneBox.style.color = 'DarkBlue';
 }
 
-function changeFontStyle(){
-    const fonts= ['Arial, sans-serif', 'Georgia, serif', 'Courier New, monospace', 'Tahoma, sans-serif', 'Verdana, sans-serif', 'Times New Roman, serif', 'Lucida Console, monospace', 'Impact, sans-serif'];
-    fortuneBox.style.fontFamily=fonts[Math.floor(Math.random() * fonts.length)];
+function btn4(){
+    fortuneBox.style.borderColor='DarkOrange';
+    fortuneBox.style.fontFamily="Georgia";
+    fortuneBox.style.fontSize="25px";
+    fortuneBox.style.backgroundColor='PeachPuff';
+    fortuneBox.style.color = 'FireBrick';
 }
 
-function changeFontSize(){
-    const sizes= ['12px', '14px', '16px', '18px', '20px', '22px', '24px', '26px'];
-    fortuneBox.style.fontSize=sizes[Math.floor(Math.random() * sizes.length)];
-}
-
-function btn1(){
-    changeFontColor();
-    changeBgColor();
-    changeBorderColor();
-    changeFontStyle();
-    changeFontSize();
-}
 
 
 

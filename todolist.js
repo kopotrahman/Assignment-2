@@ -14,6 +14,9 @@ function renderTasks() {
     taskList.appendChild(li);
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  updateCounter();
+
+
 }
 
 function addTask() {
@@ -34,5 +37,18 @@ function toggleComplete(index) {
   tasks[index].completed = !tasks[index].completed;
   renderTasks();
 }
+
+function updateCounter(){
+  const counter=tasks.length-tasks.filter(t=>t.completed).length;
+  const counterdiv=document.querySelector(".counter");
+  counterdiv.innerText=`${counter} tasks`;
+  
+  
+  
+
+
+}
+
+
 
 renderTasks();
