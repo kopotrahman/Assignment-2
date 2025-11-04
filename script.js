@@ -39,4 +39,18 @@ function changeFontStyle(){
     fortuneBox.style.fontFamily=fonts[Math.floor(Math.random() * fonts.length)];
 }
 
+function changeFontSize(){
+    const sizes= ['12px', '14px', '16px', '18px', '20px', '22px', '24px', '26px'];
+    fortuneBox.style.fontSize=sizes[Math.floor(Math.random() * sizes.length)];
+}
+
+function btn1(){
+    changeFontColor();
+    changeBgColor();
+    changeBorderColor();
+    changeFontStyle();
+    changeFontSize();
+}
+
+
 

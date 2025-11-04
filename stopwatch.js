@@ -22,7 +22,7 @@ window.onload = function() {
           clearInterval(timer);
           timer = null;
         }
-      }, 3000);
+      }, 1000);
     }
   }
 
